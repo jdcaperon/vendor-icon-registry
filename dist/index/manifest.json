@@ -1,8 +1,9 @@
 {
   "schemaVersion": 1,
-  "buildTimestamp": "1970-01-01T00:00:00.000Z",
+  "buildTimestamp": "2025-12-27T15:58:51+11:00",
   "iconCount": 3,
   "variantCount": 3,
   "tagCount": 2,
-  "categoryCount": 2
+  "categoryCount": 2,
+  "gitSha": "390d55a3dcc0c6df4f814312c899eb2c4865ee87"
 }
