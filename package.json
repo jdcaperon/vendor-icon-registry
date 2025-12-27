@@ -1,0 +1,14 @@
+{
+  "name": "mvp-icon-registry",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "svgo": "^3.0.2"
+  }
+}

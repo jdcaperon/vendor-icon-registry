@@ -1,0 +1,8 @@
+{
+  "blob": [
+    "azure.storage.blob"
+  ],
+  "serverless": [
+    "gcp.cloud-run.jobs"
+  ]
+}

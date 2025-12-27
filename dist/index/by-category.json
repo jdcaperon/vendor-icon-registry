@@ -1,0 +1,9 @@
+{
+  "compute": [
+    "aws.ec2.instance",
+    "gcp.cloud-run.jobs"
+  ],
+  "storage": [
+    "azure.storage.blob"
+  ]
+}

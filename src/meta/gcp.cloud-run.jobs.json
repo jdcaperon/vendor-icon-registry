@@ -1,0 +1,13 @@
+{
+  "id": "gcp.cloud-run.jobs",
+  "name": "Cloud Run Jobs",
+  "vendor": "gcp",
+  "categories": ["compute"],
+  "tags": ["serverless"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://cloud.google.com/icons",
+    "license": "Google Cloud Platform Icons License"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Build Manifest",
+  "description": "Build metadata emitted alongside indexes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "iconCount",
+    "variantCount",
+    "tagCount",
+    "categoryCount"
+  ],
+  "properties": {
+    "schemaVersion": { "type": "number", "description": "Manifest schema version." },
+    "iconCount": { "type": "number", "description": "Total icons in the registry." },
+    "variantCount": { "type": "number", "description": "Total icon variants across all icons." },
+    "tagCount": { "type": "number", "description": "Total tags in the index." },
+    "categoryCount": { "type": "number", "description": "Total categories in the index." }
+  }
+}

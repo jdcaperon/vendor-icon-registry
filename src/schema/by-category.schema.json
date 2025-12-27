@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Icons By Category",
+  "description": "Map of category to icon id array.",
+  "type": "object",
+  "additionalProperties": {
+    "type": "array",
+    "description": "Icon ids that include the category.",
+    "items": { "type": "string" }
+  }
+}

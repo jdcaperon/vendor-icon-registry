@@ -1,0 +1,20 @@
+{
+  "vendors": [
+    "aws",
+    "gcp",
+    "azure"
+  ],
+  "categories": [
+    "compute",
+    "storage"
+  ],
+  "tags": [
+    "serverless",
+    "blob"
+  ],
+  "variants": [
+    "default"
+  ],
+  "idPattern": "^[a-z0-9]+(\\.[a-z0-9-]+)+$",
+  "variantPattern": "^[a-z0-9-]+$"
+}
