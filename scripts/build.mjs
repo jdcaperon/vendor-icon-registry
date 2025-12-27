@@ -1,6 +1,5 @@
 import fs from "fs/promises";
 import path from "path";
-import { execSync } from "child_process";
 import { optimizeSvg } from "./optimize.mjs";
 import { validateAll, printValidationResults } from "./validate.mjs";
 
@@ -10,49 +9,6 @@ function parseId(id) {
     vendor: parts[0],
     slug: parts.slice(1).join(".")
   };
-}
-
-function getBuildTimestamp(rootDir) {
-  if (process.env.SOURCE_DATE_EPOCH) {
-    const epochMs = Number(process.env.SOURCE_DATE_EPOCH) * 1000;
-    if (!Number.isNaN(epochMs)) {
-      return new Date(epochMs).toISOString();
-    }
-  }
-
-  try {
-    const output = execSync("git log -1 --format=%cI", {
-      cwd: rootDir,
-      stdio: ["ignore", "pipe", "ignore"]
-    })
-      .toString()
-      .trim();
-    if (output) {
-      return output;
-    }
-  } catch (error) {
-    // Ignore missing git metadata.
-  }
-
-  return new Date(0).toISOString();
-}
-
-function getGitSha(rootDir) {
-  if (process.env.GITHUB_SHA) {
-    return process.env.GITHUB_SHA.trim();
-  }
-
-  try {
-    const output = execSync("git rev-parse HEAD", {
-      cwd: rootDir,
-      stdio: ["ignore", "pipe", "ignore"]
-    })
-      .toString()
-      .trim();
-    return output || null;
-  } catch (error) {
-    return null;
-  }
 }
 
 function sortObjectKeys(obj) {
@@ -164,16 +120,11 @@ await fs.writeFile(
 
 const manifest = {
   schemaVersion: 1,
-  buildTimestamp: getBuildTimestamp(rootDir),
   iconCount: metaList.length,
   variantCount,
   tagCount: Object.keys(sortedByTag).length,
   categoryCount: Object.keys(sortedByCategory).length
 };
-const gitSha = getGitSha(rootDir);
-if (gitSha) {
-  manifest.gitSha = gitSha;
-}
 
 await fs.writeFile(
   path.join(indexDir, "manifest.json"),

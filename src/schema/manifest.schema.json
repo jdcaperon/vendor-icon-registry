@@ -6,7 +6,6 @@
   "additionalProperties": false,
   "required": [
     "schemaVersion",
-    "buildTimestamp",
     "iconCount",
     "variantCount",
     "tagCount",
@@ -14,11 +13,9 @@
   ],
   "properties": {
     "schemaVersion": { "type": "number", "description": "Manifest schema version." },
-    "buildTimestamp": { "type": "string", "description": "ISO-8601 timestamp used for deterministic builds." },
     "iconCount": { "type": "number", "description": "Total icons in the registry." },
     "variantCount": { "type": "number", "description": "Total icon variants across all icons." },
     "tagCount": { "type": "number", "description": "Total tags in the index." },
-    "categoryCount": { "type": "number", "description": "Total categories in the index." },
-    "gitSha": { "type": "string", "description": "Optional git commit SHA for the build." }
+    "categoryCount": { "type": "number", "description": "Total categories in the index." }
   }
 }
