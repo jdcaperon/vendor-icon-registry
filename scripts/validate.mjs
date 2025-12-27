@@ -208,9 +208,6 @@ export async function validateAll({ rootDir, quiet = false } = {}) {
       if (!metaVariants || !metaVariants.includes(meta.defaultVariant)) {
         errors.push(`defaultVariant not in variants for id ${meta.id}: ${meta.defaultVariant}`);
       }
-      if (!variants.includes(meta.defaultVariant)) {
-        errors.push(`defaultVariant not in taxonomy for id ${meta.id}: ${meta.defaultVariant}`);
-      }
     }
 
     if (!meta.source || !isNonEmptyString(meta.source.url) || !isNonEmptyString(meta.source.license)) {
