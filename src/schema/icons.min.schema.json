@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Icon Search Index",
+  "description": "Compact icon list used by the frontend for search and filtering.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "n", "v", "s", "c", "t", "vv"],
+    "properties": {
+      "id": { "type": "string", "description": "Icon id." },
+      "n": { "type": "string", "description": "Human-readable name." },
+      "v": { "type": "string", "description": "Vendor id." },
+      "s": { "type": "string", "description": "Slug portion of the id (id without vendor)." },
+      "c": { "type": "array", "items": { "type": "string" }, "description": "Categories for the icon." },
+      "t": { "type": "array", "items": { "type": "string" }, "description": "Tags for the icon." },
+      "a": { "type": "array", "items": { "type": "string" }, "description": "Aliases for search." },
+      "vv": { "type": "array", "items": { "type": "string" }, "description": "Variants available for the icon." },
+      "dv": { "type": "string", "description": "Optional default variant." }
+    }
+  }
+}

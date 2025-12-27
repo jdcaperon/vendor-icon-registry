@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Icon Metadata",
+  "description": "Per-icon metadata describing classification, variants, and provenance.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "vendor",
+    "categories",
+    "tags",
+    "variants",
+    "defaultVariant",
+    "source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Icon id in the format <vendor>.<slug>.",
+      "pattern": "^[a-z0-9]+(\\.[a-z0-9-]+)+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable icon name.",
+      "minLength": 1
+    },
+    "vendor": {
+      "type": "string",
+      "description": "Vendor id; must match taxonomy and the id prefix.",
+      "minLength": 1
+    },
+    "categories": {
+      "type": "array",
+      "description": "Categories this icon belongs to.",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Searchable tags for this icon.",
+      "items": { "type": "string" }
+    },
+    "aliases": {
+      "type": "array",
+      "description": "Alternate search terms for this icon.",
+      "items": { "type": "string" }
+    },
+    "variants": {
+      "type": "array",
+      "description": "Supported variants for this icon (used in SVG filenames).",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    },
+    "defaultVariant": {
+      "type": "string",
+      "description": "Optional default variant to use when none is specified.",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "source": {
+      "type": "object",
+      "description": "Provenance and licensing information for the icon.",
+      "additionalProperties": false,
+      "required": ["url", "license"],
+      "properties": {
+        "url": { "type": "string", "minLength": 1, "description": "Source URL for the icon asset." },
+        "license": { "type": "string", "minLength": 1, "description": "License name or reference." }
+      }
+    }
+  }
+}

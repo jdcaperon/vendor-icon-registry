@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Icon Taxonomy",
+  "description": "Defines the strict vocabulary for vendors, categories, tags, and variants.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["vendors", "categories", "tags", "variants", "idPattern", "variantPattern"],
+  "properties": {
+    "vendors": {
+      "type": "array",
+      "description": "Allowed vendor ids (first segment of icon ids).",
+      "items": { "type": "string" }
+    },
+    "categories": {
+      "type": "array",
+      "description": "Allowed categories for metadata classification.",
+      "items": { "type": "string" }
+    },
+    "tags": {
+      "type": "array",
+      "description": "Allowed tags for metadata classification.",
+      "items": { "type": "string" }
+    },
+    "variants": {
+      "type": "array",
+      "description": "Allowed icon variants (last token in SVG filename).",
+      "items": { "type": "string" }
+    },
+    "idPattern": {
+      "type": "string",
+      "description": "Regex for valid icon ids."
+    },
+    "variantPattern": {
+      "type": "string",
+      "description": "Regex for valid variant ids."
+    }
+  }
+}

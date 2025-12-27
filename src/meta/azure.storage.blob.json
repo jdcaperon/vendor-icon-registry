@@ -1,0 +1,13 @@
+{
+  "id": "azure.storage.blob",
+  "name": "Azure Storage Blob",
+  "vendor": "azure",
+  "categories": ["storage"],
+  "tags": ["blob"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://learn.microsoft.com/azure/architecture/icons/",
+    "license": "Microsoft Azure Icons License"
+  }
+}

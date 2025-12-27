@@ -1,0 +1,13 @@
+{
+  "id": "aws.ec2.instance",
+  "name": "Amazon EC2 Instance",
+  "vendor": "aws",
+  "categories": ["compute"],
+  "tags": [],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}
