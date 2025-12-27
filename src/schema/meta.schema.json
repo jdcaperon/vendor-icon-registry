@@ -17,7 +17,7 @@
   "properties": {
     "id": {
       "type": "string",
-      "description": "Icon id in the format <vendor>.<slug>.",
+      "description": "Icon id in the format `<vendor>.<slug>`.",
       "pattern": "^[a-z0-9]+(\\.[a-z0-9-]+)+$"
     },
     "name": {
@@ -54,7 +54,7 @@
     },
     "defaultVariant": {
       "type": "string",
-      "description": "Optional default variant to use when none is specified.",
+      "description": "Default variant to use when none is specified.",
       "pattern": "^[a-z0-9-]+$"
     },
     "source": {
