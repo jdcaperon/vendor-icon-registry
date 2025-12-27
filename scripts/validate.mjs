@@ -138,7 +138,9 @@ export async function validateAll({ rootDir, quiet = false } = {}) {
     }
 
     if (fileId !== meta.id) {
-      errors.push(`Metadata filename does not match id: ${filePath}`);
+      errors.push(
+        `Metadata filename '${file}' does not match id '${meta.id}' (expected '${meta.id}.json')`
+      );
     }
 
     if (idPattern && !idPattern.test(meta.id)) {
@@ -309,7 +311,7 @@ export async function validateAll({ rootDir, quiet = false } = {}) {
     if (/\son[a-z]+\s*=\s*/i.test(content)) {
       errors.push(`Disallowed on* handler attribute in SVG: ${svg.path}`);
     }
-    if (!/viewBox\s*=\s*"/i.test(content)) {
+    if (!/viewBox\s*=\s*["']/i.test(content)) {
       warnings.push(`SVG missing viewBox attribute: ${svg.path}`);
     }
   }
@@ -328,9 +330,9 @@ export async function validateAll({ rootDir, quiet = false } = {}) {
 }
 
 const modulePath = fileURLToPath(import.meta.url);
-const argvPath = process.argv[1] ? path.resolve(process.argv[1]) : "";
+const scriptPath = process.argv[1] ? path.resolve(process.argv[1]) : "";
 
-if (modulePath === argvPath) {
+if (modulePath === scriptPath) {
   const { errors, warnings } = await validateAll({ quiet: true });
   printValidationResults({ errors, warnings });
   if (errors.length > 0) {

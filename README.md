@@ -6,7 +6,7 @@ Static SVG icon registry with strict taxonomy, per-icon metadata, and prebuilt J
 
 - Icon id format: `<vendor>.<slug>` where `slug` can include dots.
 - SVG filename format: `<slug>.<variant>.svg` (variant is the last token before `.svg`).
-- Example: `aws.ec2.instance` → `src/icons/aws/ec2.instance.mono.svg`.
+- Example: `aws.ec2.instance` → `src/icons/aws/ec2.instance.default.svg`.
 
 ## Using the build output
 
@@ -24,7 +24,7 @@ SVG URL construction:
 Example:
 
 ```
-/svg/aws/ec2.instance.mono.svg
+/svg/aws/ec2.instance.default.svg
 ```
 
 ## Build & validate

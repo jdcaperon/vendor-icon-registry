@@ -19,8 +19,7 @@ const rootDir = process.cwd();
 const validation = await validateAll({ rootDir, quiet: true });
 printValidationResults({ errors: validation.errors, warnings: validation.warnings });
 if (validation.errors.length > 0) {
-  process.exitCode = 1;
-  process.exit();
+  process.exit(1);
 }
 
 const distDir = path.join(rootDir, "dist");
