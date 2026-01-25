@@ -1,0 +1,13 @@
+{
+  "id": "aws.elastic-load-balancing",
+  "name": "Elastic Load Balancing",
+  "vendor": "aws",
+  "categories": ["networking"],
+  "tags": ["load-balancer"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

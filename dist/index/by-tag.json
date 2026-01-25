@@ -1,8 +1,65 @@
 {
+  "api": [
+    "aws.api-gateway"
+  ],
   "blob": [
     "azure.storage.blob"
   ],
+  "cdn": [
+    "aws.cloudfront"
+  ],
+  "containers": [
+    "aws.ecr",
+    "aws.ecs",
+    "aws.eks"
+  ],
+  "dns": [
+    "aws.route-53"
+  ],
+  "functions": [
+    "aws.lambda"
+  ],
+  "gateway": [
+    "aws.api-gateway"
+  ],
+  "iac": [
+    "aws.cloudformation"
+  ],
+  "iam": [
+    "aws.iam"
+  ],
+  "kubernetes": [
+    "aws.eks"
+  ],
+  "load-balancer": [
+    "aws.elastic-load-balancing"
+  ],
+  "monitoring": [
+    "aws.cloudwatch"
+  ],
+  "nosql": [
+    "aws.dynamodb"
+  ],
+  "notifications": [
+    "aws.sns"
+  ],
+  "object-storage": [
+    "aws.s3"
+  ],
+  "queue": [
+    "aws.sqs"
+  ],
+  "registry": [
+    "aws.ecr"
+  ],
+  "relational": [
+    "aws.rds"
+  ],
   "serverless": [
+    "aws.lambda",
     "gcp.cloud-run.jobs"
+  ],
+  "vpc": [
+    "aws.vpc"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "id": "aws.iam",
+  "name": "AWS Identity and Access Management",
+  "vendor": "aws",
+  "categories": ["security"],
+  "tags": ["iam"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

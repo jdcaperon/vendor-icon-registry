@@ -1,0 +1,13 @@
+{
+  "id": "aws.route-53",
+  "name": "Amazon Route 53",
+  "vendor": "aws",
+  "categories": ["networking"],
+  "tags": ["dns"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

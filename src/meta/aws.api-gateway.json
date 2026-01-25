@@ -1,0 +1,13 @@
+{
+  "id": "aws.api-gateway",
+  "name": "Amazon API Gateway",
+  "vendor": "aws",
+  "categories": ["networking"],
+  "tags": ["api", "gateway"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

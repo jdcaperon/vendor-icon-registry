@@ -1,9 +1,39 @@
 {
   "compute": [
+    "aws.ec2",
     "aws.ec2.instance",
+    "aws.lambda",
     "gcp.cloud-run.jobs"
   ],
+  "containers": [
+    "aws.ecr",
+    "aws.ecs",
+    "aws.eks"
+  ],
+  "database": [
+    "aws.dynamodb",
+    "aws.rds"
+  ],
+  "integration": [
+    "aws.sns",
+    "aws.sqs"
+  ],
+  "management": [
+    "aws.cloudformation",
+    "aws.cloudwatch"
+  ],
+  "networking": [
+    "aws.api-gateway",
+    "aws.cloudfront",
+    "aws.elastic-load-balancing",
+    "aws.route-53",
+    "aws.vpc"
+  ],
+  "security": [
+    "aws.iam"
+  ],
   "storage": [
+    "aws.s3",
     "azure.storage.blob"
   ]
 }

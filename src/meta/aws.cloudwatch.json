@@ -1,0 +1,13 @@
+{
+  "id": "aws.cloudwatch",
+  "name": "Amazon CloudWatch",
+  "vendor": "aws",
+  "categories": ["management"],
+  "tags": ["monitoring"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}
