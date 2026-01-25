@@ -1,0 +1,13 @@
+{
+  "id": "aws.lambda",
+  "name": "AWS Lambda",
+  "vendor": "aws",
+  "categories": ["compute"],
+  "tags": ["serverless", "functions"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

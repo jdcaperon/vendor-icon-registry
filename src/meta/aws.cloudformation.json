@@ -1,0 +1,13 @@
+{
+  "id": "aws.cloudformation",
+  "name": "AWS CloudFormation",
+  "vendor": "aws",
+  "categories": ["management"],
+  "tags": ["iac"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "aws.sqs",
+  "name": "Amazon SQS",
+  "vendor": "aws",
+  "categories": ["integration"],
+  "tags": ["queue"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

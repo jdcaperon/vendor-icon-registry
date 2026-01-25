@@ -1,0 +1,13 @@
+{
+  "id": "aws.sns",
+  "name": "Amazon SNS",
+  "vendor": "aws",
+  "categories": ["integration"],
+  "tags": ["notifications"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}
