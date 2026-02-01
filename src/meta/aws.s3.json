@@ -1,0 +1,13 @@
+{
+  "id": "aws.s3",
+  "name": "Amazon S3",
+  "vendor": "aws",
+  "categories": ["storage"],
+  "tags": ["object-storage"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

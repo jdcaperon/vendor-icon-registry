@@ -1,0 +1,13 @@
+{
+  "id": "aws.dynamodb",
+  "name": "Amazon DynamoDB",
+  "vendor": "aws",
+  "categories": ["database"],
+  "tags": ["nosql"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

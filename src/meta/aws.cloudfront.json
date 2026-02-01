@@ -1,0 +1,13 @@
+{
+  "id": "aws.cloudfront",
+  "name": "Amazon CloudFront",
+  "vendor": "aws",
+  "categories": ["networking"],
+  "tags": ["cdn"],
+  "variants": ["default"],
+  "defaultVariant": "default",
+  "source": {
+    "url": "https://aws.amazon.com/architecture/icons/",
+    "license": "AWS Architecture Icons License"
+  }
+}

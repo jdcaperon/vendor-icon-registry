@@ -6,11 +6,35 @@
   ],
   "categories": [
     "compute",
-    "storage"
+    "storage",
+    "database",
+    "networking",
+    "security",
+    "management",
+    "integration",
+    "containers"
   ],
   "tags": [
+    "api",
+    "blob",
+    "cdn",
+    "containers",
+    "dns",
+    "functions",
+    "gateway",
+    "iac",
+    "iam",
+    "kubernetes",
+    "load-balancer",
+    "monitoring",
+    "notifications",
+    "nosql",
+    "object-storage",
+    "queue",
+    "registry",
+    "relational",
     "serverless",
-    "blob"
+    "vpc"
   ],
   "variants": [
     "default"
